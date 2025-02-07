@@ -19,8 +19,7 @@ public class EntryService {
     }
 
     public List<TodoEntryGetModel> getTODOEntryList() {
-        List<TodoEntryGetModel> entryList = todoEntryRepository.findAllEntries();
-        return entryList;
+        return todoEntryRepository.findAllEntries();
     }
 
     public TodoEntry saveEntry(TodoEntry todoEntry) {
